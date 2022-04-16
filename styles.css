@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+#particles-js {
+    z-index:-1;
+    position: absolute;
+    margin: 0 auto;
+    width: 100vw;
+    height: 45%;
+    background: #6A878B;
+}
+
+#banner-wrapper {
+    display: block;
+    height: 45%;
+}
+
+.resume-item {
+    border-left: 2px solid #6A878B;
+    position: relative;
+    line-height: 1.6;
+    padding-left: 15px;
+}
+
+h1 {
+    margin: 0;
+    padding-left: 18%;
+    padding-top: 5%;
+}
+
+h2 {
+    margin: 0;
+    padding-left: 18%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+h3 {
+    margin: 0;
+    color: #6A878B;
+    border-image: linear-gradient( to right, #6A878B, rgba(0, 0, 0, 0) ) 0 1 100%;
+    border-style: solid;
+    border-width: 1.5px;
+}
+
+.columns {
+    vertical-align:top;
+    display: inline-block;
+    width: 30%;
+    padding-top: 20px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+#columns-one {
+    padding-left: 18%;
+    padding-right: 1%;
+}
+
+#columns-two {
+    padding-left: 1%;
+    padding-right: 18%;
+}
+
+.bottom-banner {
+    opacity: 25%;
+    height: 10%;
+    border-top: 2px solid #6A878B;
+    line-height: 1.6;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.container {
+    display: inline-block;
+    width: 100%;
+}
+
+#lefthyper {
+    padding-left: 18%;
+}
+
+.company {
+    font-size: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.dates {
+    font-size: 16px;
+    background: #ededed;
+    border-radius: 15px;
+    padding: 5px 15px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+a {
+    padding-right: 5px;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    .columns {
+        display: block;
+        width: 65%;
+    }
+    #columns-two {
+        padding-left: 18%;
+        padding-right: 1%;
+    }
+    #links-wrapper {
+        display: block;
+    }
+    .banner-hyperlink {
+        display: block;
+    }
+    #otherhyper {
+        padding-left: 18%;
+    }
+}
