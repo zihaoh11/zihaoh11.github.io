@@ -1,16 +1,3 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
-
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
-});
-*/
-
-/* Otherwise just put the config content (json): */
-
 particlesJS('particles-js',
   
   {
@@ -131,3 +118,28 @@ particlesJS('particles-js',
   }
 
 );
+
+// modal
+var modal = document.getElementById("ichimoku-modal");
+
+// button that opens the modal
+var ichimoku_btn = document.getElementById("ichimoku");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+ichimoku_btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
